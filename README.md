@@ -56,13 +56,13 @@ To test the cluster, there is a YAML file with a deployment and service of a ngi
 
 
 ```sh
-kubctl apply -f nginx.yaml
+kubectl apply -f nginx.yaml
 # After some time check where they are running
-kubctl get pods -o wide
+kubectl get pods -o wide
 ```
 The nginx YAML file is set to use 20 replicas, they should be spread on all the nodes.
 
-![kubctl apply](docs/screenshot_02.png)
+![kubectl apply](docs/screenshot_02.png)
 
 
 
